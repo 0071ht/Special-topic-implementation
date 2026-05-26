@@ -1,5 +1,5 @@
 # DeepFake 人臉偵測的應用程式
-#DeepFake Face Detection Background Application
+# DeepFake Face Detection Background Application
 
 ## 專題組員
 * 林弘叡 41243120
