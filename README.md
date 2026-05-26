@@ -13,3 +13,6 @@ DeepFake Face Detection Background Application
 
 ## 完整專案連結
 https://drive.google.com/file/d/1hB3-MJpESix9bt-qR7v3JQZ9A_27zmeF/view?usp=sharing
+
+## 專題簡報連結
+https://onedrive.live.com/:p:/g/personal/fa7e92bb9288b32d/IQCGJd78f1mmSZlHq1T_ZjQ6ATPCpFOZ-dM0ZSjikvGrdgo?rtime=I7zKJFG73kg&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy9mYTdlOTJiYjkyODhiMzJkL0lRQ0dKZDc4ZjFtbVNabEhxMVRfWmpRNkFUUENwRk9aLWRNMFpTamlrdkdyZGdvP2U9YWpKSWtjJmZiY2xpZD1Jd1pYaDBiZ05oWlcwQ01URUFjM0owWXdaaGNIQmZhV1FQTkRNM05qSTJNekUyT1Rjek56ZzRBQUVlcWw0Vkw5c1Rjak9EZVJtOEk5ZWphSTBaVG95Rm9GVndpd1NKT3VpNWFSSXhvVVYzQ3BmSF9sQTdrMWdfYWVtX0hOcjhsYU9YTkRBMno4dUJ0ZXhqR0E
