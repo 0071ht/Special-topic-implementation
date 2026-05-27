@@ -63,7 +63,7 @@ class FakeFormerDetector:
         self.transforms = final_transform(self.cfg.DATASET)  # (FakeFormer 官方用法) 初始化影像預處理轉換流程
 
     def predict_array(self, img_array):  # 定義傳入 NumPy 陣列進行預測的方法
-        """ 直接對記憶體內的影像陣列進行預測 """
+
         img = cv2.cvtColor(img_array, cv2.COLOR_BGR2RGB)  # cv2.cvtColor 將 BGR 色彩空間轉換為 RGB
         
         c, s = get_center_scale(img.shape[:2], self.aspect_ratio, self.pixel_std)  # (FakeFormer 官方用法) 取得影像的中心點與縮放比例
@@ -83,14 +83,14 @@ class FakeFormerDetector:
             cls_outputs = outputs[0]["cls"].sigmoid()  # (FakeFormer 官方用法) 提取分類輸出並套用 Sigmoid 函數轉為 0~1 的機率值
             label_pred = cls_outputs.cpu().numpy()  # 將結果移回 CPU 記憶體並轉換為 NumPy 陣列
             
-            score = float(label_pred[0][-1])  # 提取最終的偽造機率分數並轉為 Python 原生 float
+            score = float(label_pred[0][-1])  # 提取最終的偽造機率分數並轉為float
             label = "Fake" if score > self.cfg.TEST.threshold else "Real"  # 依據設定檔的閾值判定為偽造或真實
             infer_time = time.time() - st  # 計算總推論花費時間
             
         return label, score, infer_time  # 回傳預測標籤、機率分數與推論時間
 
     def predict(self, image_path):  # 定義傳入實體檔案路徑進行預測的方法
-        """ 讀取實體檔案進行預測 (手動模式使用，不經由 YOLO 裁切) """  
+
         img = load_image(image_path)  # (FakeFormer 官方用法) 呼叫自訂工具函式讀取硬碟中的影像檔案
         
         c, s = get_center_scale(img.shape[:2], self.aspect_ratio, self.pixel_std)  # (FakeFormer 官方用法) 取得影像的中心點與縮放比例
